@@ -21,4 +21,7 @@ jobs:
         java-version: '17'
 
     - name: Run Maven tests
-      run: mvn -B test
+      run: |
+        cd demo-tests
+        mvn -B test
+
